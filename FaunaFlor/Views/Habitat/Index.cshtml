@@ -1,0 +1,34 @@
+﻿@model List<Habitat>
+
+<div class="container mt-4">
+    <h1>Lista de Animais</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Descrição</th>    
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var habitat in Model)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(habitat.ImageURL))
+                        {
+                            <img src="@Url.Content(habitat.ImageURL)" alt="Imagem do Animal" width="300" height="200" />
+                        }
+                        else
+                        {
+                            <span>Sem imagem</span>
+                        }
+                    </td>
+                    <td>@habitat.Nome</td>
+                    <td>@habitat.Descricao</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

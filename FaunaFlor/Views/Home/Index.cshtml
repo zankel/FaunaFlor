@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <!-- Carrossel de imagens -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/img/amazonia.jpeg" class="d-block w-100" style="object-fit: cover; width: 500px; height: 500px;" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/savana.jpeg" class="d-block w-100" style="object-fit: cover; width: 500px; height: 500px;" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/artico.jpg" class="d-block w-100" style="object-fit: cover; width: 500px; height: 500px;" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+oR/z7Q7Oa0Sg2RZu9GryWtmj8KfvrFTn5U8jHvZ3tFZXiS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-uyyeoWc3StH8ypg4ZUtu6egM5Q26BxVfap8h9R3X3sMhtL64c4AjJgZy4O5p+U+I" crossorigin="anonymous"></script>
+}
