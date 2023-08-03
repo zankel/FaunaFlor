@@ -20,6 +20,14 @@ namespace FaunaFlor.Repository
                 .Include(a => a.Habitats)
                 .ToListAsync();
         }
+
+        public async Task<Animal> GetAnimaisByIdAsync(int id)
+        {
+            return await _context.Animais
+                .Include(a => a.Dieta)
+                .Include(a => a.Habitats)
+                .FirstOrDefaultAsync(a => a.AnimalId == id);
+        }
     }
 
 }

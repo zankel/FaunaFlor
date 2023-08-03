@@ -7,5 +7,7 @@ namespace FaunaFlor.Repository
     public interface IAnimalRepository
     {
         Task<List<Animal>> GetAnimaisAsync();
+        Task<Animal> GetAnimaisByIdAsync(int id);
+
     }
 }

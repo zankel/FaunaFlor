@@ -17,5 +17,10 @@ namespace FaunaFlor.Business
         {
             return await _animalRepository.GetAnimaisAsync();
         }
+
+        public async Task<Animal> GetAnimaisByIdAsync(int id)
+        {
+            return await _animalRepository.GetAnimaisByIdAsync(id);
+        }
     }
 }

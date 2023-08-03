@@ -27,7 +27,8 @@
                             <span>Sem imagem</span>
                         }
                     </td>
-                    <td>@animal.Nome</td>
+                    <td><a href="@Url.Action("AnimalDetalhes", "Animal", new { id = animal.AnimalId })">@animal.Nome</a></td>
+                    @*<td>@animal.Nome</td>*@
                     <td>@animal.Descricao</td>
                     <td>@animal.Dieta.Nome</td>
                     <td>

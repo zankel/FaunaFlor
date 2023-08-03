@@ -1,5 +1,47 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model FaunaFlor.Models.Animal
+
+<div class="container mt-4">
+    <h1>Mais detalhes sobre o @Model.Nome</h1>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            @if (!string.IsNullOrEmpty(Model.ImageURL))
+            {
+                <img src="@Url.Content(Model.ImageURL)" alt="Imagem do Animal" class="img-fluid" />
+            }
+            else
+            {
+                <span>Sem imagem</span>
+            }
+            <h2>@Model.Nome</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Descrição</th>
+                    <td>@Model.DescricaoPrincipal</td>
+                </tr>
+                <tr>
+                    <th>Dieta</th>
+                    <td>@Model.Dieta.Nome</td>
+                </tr>
+                <tr>
+                    <th>Habitat</th>
+                    <td>
+                        @foreach (var habitat in Model.Habitats)
+                        {
+                            @habitat.Nome
+                            @if (!habitat.Equals(Model.Habitats.Last()))
+                            {
+                                @:&nbsp; <!-- Insere um espaço em branco -->
+                            }
+                        }
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

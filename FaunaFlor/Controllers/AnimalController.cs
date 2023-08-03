@@ -20,5 +20,11 @@ namespace FaunaFlor.Controllers
             return View(animais);
         }
 
+        public async Task<IActionResult> AnimalDetalhes(int id)
+        {
+            var animal = await _animalBusiness.GetAnimaisByIdAsync(id);
+            return View(animal);
+        }
+
     }
 }
