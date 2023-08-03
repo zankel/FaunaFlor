@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\aguas-costeiras.jpg",
+      "PackagePath": "staticwebassets\\img\\aguas-costeiras.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\aguas-oceanicas.jpg",
+      "PackagePath": "staticwebassets\\img\\aguas-oceanicas.jpg"
+    },
+    {
       "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\amazonia.jpeg",
       "PackagePath": "staticwebassets\\img\\amazonia.jpeg"
     },
@@ -25,6 +33,10 @@
       "PackagePath": "staticwebassets\\img\\corvo.jpg"
     },
     {
+      "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\floresta.jpg",
+      "PackagePath": "staticwebassets\\img\\floresta.jpg"
+    },
+    {
       "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\hiena-malhada.jpg",
       "PackagePath": "staticwebassets\\img\\hiena-malhada.jpg"
     },
@@ -35,6 +47,10 @@
     {
       "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\orca.jpg",
       "PackagePath": "staticwebassets\\img\\orca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\plataforma-continental.jpg",
+      "PackagePath": "staticwebassets\\img\\plataforma-continental.jpg"
     },
     {
       "Id": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\savana.jpeg",

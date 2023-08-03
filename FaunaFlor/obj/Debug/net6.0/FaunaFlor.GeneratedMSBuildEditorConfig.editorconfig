@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\PICHAU\source\repos\TESTE\FaunaFlor\FaunaFlor
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/PICHAU/source/repos/TESTE/FaunaFlor/FaunaFlor/Views/Animal/AnimalDetalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFuaW1hbERldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PICHAU/source/repos/TESTE/FaunaFlor/FaunaFlor/Views/Animal/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KmCmuRxqFg8NkGxPWu1LPXTPgDT9MLzc+VLHiqJqZkc=",
+  "Hash": "Soz+4OuM9liQrKXghjV7VaycyJYfkuSgSaNJ7guxBzY=",
   "Source": "FaunaFlor",
   "BasePath": "_content/FaunaFlor",
   "Mode": "Default",
@@ -85,6 +85,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\aguas-costeiras.jpg",
+      "SourceId": "FaunaFlor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\",
+      "BasePath": "_content/FaunaFlor",
+      "RelativePath": "img/aguas-costeiras.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\aguas-costeiras.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\aguas-oceanicas.jpg",
+      "SourceId": "FaunaFlor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\",
+      "BasePath": "_content/FaunaFlor",
+      "RelativePath": "img/aguas-oceanicas.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\aguas-oceanicas.jpg"
+    },
+    {
       "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\amazonia.jpeg",
       "SourceId": "FaunaFlor",
       "SourceType": "Discovered",
@@ -136,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\img\\corvo.jpg"
     },
     {
+      "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\floresta.jpg",
+      "SourceId": "FaunaFlor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\",
+      "BasePath": "_content/FaunaFlor",
+      "RelativePath": "img/floresta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\floresta.jpg"
+    },
+    {
       "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\hiena-malhada.jpg",
       "SourceId": "FaunaFlor",
       "SourceType": "Discovered",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\orca.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\plataforma-continental.jpg",
+      "SourceId": "FaunaFlor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\",
+      "BasePath": "_content/FaunaFlor",
+      "RelativePath": "img/plataforma-continental.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\plataforma-continental.jpg"
     },
     {
       "Identity": "C:\\Users\\PICHAU\\source\\repos\\TESTE\\FaunaFlor\\FaunaFlor\\wwwroot\\img\\savana.jpeg",

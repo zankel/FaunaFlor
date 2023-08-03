@@ -12,7 +12,12 @@ namespace FaunaFlor.Models
         public string Nome { get; set; }
 
         [Required]
+        [StringLength(300)]
         public string Descricao { get; set; }
+
+        [Required]
+        [StringLength(int.MaxValue)]
+        public string DescricaoPrincipal { get; set; }
 
         [StringLength(300)]
         public string ImageURL { get; set; }
