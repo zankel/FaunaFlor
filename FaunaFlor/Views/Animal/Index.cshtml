@@ -1,7 +1,17 @@
 ﻿@model List<Animal> 
 
+
 <div class="container mt-4">
     <h1>Lista de Animais</h1>
+
+    <form asp-action="Index" method="get">
+        <div class="input-group mb-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite o nome do animal para pesquisar" name="searchString" />
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </div>
+        </div>
+    </form>
 
     <table class="table table-striped">
         <thead>
@@ -27,14 +37,13 @@
                             <span>Sem imagem</span>
                         }
                     </td>
-                    <td><a href="@Url.Action("AnimalDetalhes", "Animal", new { id = animal.AnimalId })">@animal.Nome</a></td>
-                    @*<td>@animal.Nome</td>*@
+                    <td><a href="@Url.Action("AnimalDetalhes", "Animal", new { id = animal.AnimalId })">@animal.Nome</a></td>         
                     <td>@animal.Descricao</td>
                     <td>@animal.Dieta.Nome</td>
                     <td>
                         @foreach (var habitat in animal.Habitats)
                         {
-                            @habitat.Nome
+                            <a href="@Url.Action("HabitatDetalhes", "Habitat", new { id = habitat.HabitatId })">@habitat.Nome</a>
                             @if (!habitat.Equals(animal.Habitats.Last()))
                             {
                                 @:&nbsp; <!-- Insere um espaço em branco -->

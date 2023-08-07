@@ -1,8 +1,15 @@
 ﻿@model List<Habitat>
 
 <div class="container mt-4">
-    <h1>Lista de Animais</h1>
-
+    <h1>Lista de Habitats</h1>
+    <form asp-action="Index" method="get">
+        <div class="input-group mb-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite o nome do habitat para pesquisar" name="searchString" />
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </div>
+        </div>
+    </form>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -25,7 +32,7 @@
                             <span>Sem imagem</span>
                         }
                     </td>
-                    <td>@habitat.Nome</td>
+                    <td><a href="@Url.Action("HabitatDetalhes", "Habitat", new { id = habitat.HabitatId })">@habitat.Nome</a></td>
                     <td>@habitat.Descricao</td>
                 </tr>
             }

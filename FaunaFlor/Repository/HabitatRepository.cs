@@ -17,5 +17,10 @@ namespace FaunaFlor.Repository
         {
             return await _context.Habitats.ToListAsync();
         }
+
+        public async Task<Habitat> GetHabitatByIdAsync(int id )
+        {
+            return await _context.Habitats.FirstOrDefaultAsync(h => h.HabitatId == id);
+        }
     }
 }

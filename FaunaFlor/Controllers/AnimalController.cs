@@ -14,9 +14,18 @@ namespace FaunaFlor.Controllers
             _animalBusiness = animalService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
             var animais = await _animalBusiness.GetAnimaisAsync();
+
+          
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                animais = animais
+                    .Where(a => a.Nome.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
             return View(animais);
         }
 

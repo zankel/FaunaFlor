@@ -1,4 +1,5 @@
-﻿using FaunaFlor.Business.Implementations;
+﻿using FaunaFlor.Business;
+using FaunaFlor.Business.Implementations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FaunaFlor.Controllers
@@ -12,9 +13,24 @@ namespace FaunaFlor.Controllers
             _habitatBusiness = habitatBusiness;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var habitat = await _habitatBusiness.GetHabitatAsync();
+            var habitats = await _habitatBusiness.GetHabitatAsync();
+
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                habitats = habitats
+                    .Where(a => a.Nome.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            return View(habitats);
+        }
+
+        public async Task<IActionResult> HabitatDetalhes(int id)
+        {
+            var habitat = await _habitatBusiness.GetHabitatByIdAsync(id);
             return View(habitat);
         }
     }

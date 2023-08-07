@@ -22,6 +22,9 @@ namespace FaunaFlor.Models
         [StringLength(300)]
         public string ImageURL { get; set; }
 
+        //Barra de pesquisa
+        public string SearchString { get; set; }
+      
         // Relacionamento muitos para muitos com Habitat
         public List<Habitat> Habitats { get; set; }
 

@@ -17,5 +17,10 @@ namespace FaunaFlor.Business
         {
             return await _habitatRepository.GetHabitatAsync();
         }
+
+        public async Task<Habitat> GetHabitatByIdAsync(int id )
+        {
+            return await _habitatRepository.GetHabitatByIdAsync(id);
+        }
     }
 }
